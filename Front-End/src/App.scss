@@ -1,0 +1,153 @@
+$font:'IBM Plex Sans', sans-serif;
+$color1:#633BBC;
+$color2:#E1E1E6;
+$font2:'Titillium Web', sans-serif;
+$color3:#8D8D99;
+
+
+.etapa{
+    display: none;
+}
+.etapa.visivel{
+    display: block;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    .one,.two,.three{
+        text-align: center;
+        background-color: $color1;
+        color:#ffff;
+        padding: 5px 12px;
+        border-radius: 50%;
+        font-family: $font2;
+        margin-right: 5px;
+    }
+    .two,.three{
+        background-color: $color1;
+        color: #ffff;
+    }
+    
+}
+hr{
+    width:550px;
+    color: rgba(128, 128, 128, 0.452);
+    position: relative;
+    top: 40px;
+    margin: auto;
+}
+.form{
+    color: #000000;
+    width: 592px;
+    height: 544px;
+    background-color: #ffff;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.formulario{
+    position: absolute;
+    top:23%;
+    .input1,.input2,.input3{
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    input{
+        width: 528px;
+        height: 56px;
+        border: 1px solid rgba(128, 128, 128, 0.261);
+        border-radius: 2px;
+        padding-left:10px;
+        font-family: $font;
+    }
+    input::placeholder{
+        position: relative;
+        left: 5px;
+        color: $color3;
+    }
+    label{
+        display: block;
+        font-size: 16px;
+    }
+    .button1{
+        left: 72%;
+    }
+    .btn-primary{
+        background-color: $color1;
+        position: relative;
+        left: 38.5%;
+    }
+    .btn-outline-primary,.btn-primary{
+        width:158px;
+        height:56px;
+    }
+    .btn-outline-primary{
+        border: 1px solid $color1;
+        color: $color1;
+        margin-left: 30px;
+    }
+    .btn-outline-primary:hover{
+        background-color: $color1;
+        color: #ffff;
+    }
+    #etapa3{
+        label{
+            margin-bottom: 10px;
+        }
+        input{
+            padding: 10px;
+            height: 100px;
+            resize: vertical;
+            vertical-align: top;
+    }
+        input::placeholder{
+            position: relative;
+            top: -30px;
+        }
+        .btn-primary{
+            position: relative;
+            left: 23.5%;
+            width:212px;
+        }
+        .btn-outline-primary{
+            position: relative;
+            right:5.5%;
+        }
+        .btn-primary,.btn-outline-primary{
+            margin-top:20px;
+        }
+    }
+    
+    
+    
+}
+.login{
+    box-sizing: border-box;
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        font-family: $font2;
+    }
+    .formulario{
+        span{
+            color: #8D8D99;
+            margin-left: 5px;
+        }
+    }
+    .info{
+        text-align: center;
+        font-family: $font2;
+    }
+    p{
+        border-bottom: 1px solid #8D8D99;
+        font-family: $font2;
+        width: 590px;
+        height: 40px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+}
