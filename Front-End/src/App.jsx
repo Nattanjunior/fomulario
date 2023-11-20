@@ -16,7 +16,7 @@ function App() {
 
   const handlerResponse = async (e)=>{
     e.preventDefault();
-    const response = await axios.post('https://formulario-rho-two.vercel.app/',
+    const response = await axios.post('https://formulario-rho-two.vercel.app/interface',
         JSON.stringify({name,tel,email,NameEmpresa,NumberFunc,FaleNegocio,ObjetivoFinal}),
         {
           headers: {'Content-Type':'application/json'}
